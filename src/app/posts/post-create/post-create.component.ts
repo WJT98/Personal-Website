@@ -15,6 +15,8 @@ export class PostCreateComponent {
   enteredContent = "";
   @Output() postCreated = new EventEmitter<Post>();
 
+  constructor(public postsService: PostsService){}
+
 	onAddPost(form: NgForm) {
     if (form.invalid){
       return
