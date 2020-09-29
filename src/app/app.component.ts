@@ -8,7 +8,7 @@ import { Post } from './posts/post.model'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "my-dream-app"
+  title = "WT Personal Site"
   posts: Post[] = [];
   onPostAdded(post) {
     alert("SDFSDF");

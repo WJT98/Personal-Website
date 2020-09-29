@@ -12,6 +12,11 @@ import { AppComponent } from './app.component';
 import { PostCreateComponent } from  './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component'
 import { PostListComponent } from './posts/post-list/post-list.component'
+import { AboutComponent } from './about/about.component'
+import { HomeComponent } from './home/home.component'
+import { PostsComponent } from './posts/posts.component'
+
+import { AppRoutingModule } from './app-routing.module'; // CLI imports AppRoutingModule
 
 @NgModule({
   declarations: [
@@ -21,7 +26,10 @@ import { PostListComponent } from './posts/post-list/post-list.component'
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
-    PostListComponent
+    PostListComponent,
+    AboutComponent,
+    HomeComponent,
+    PostsComponent
   ],
   imports: [
     /**
@@ -35,6 +43,7 @@ import { PostListComponent } from './posts/post-list/post-list.component'
     MatButtonModule,
     MatToolbarModule,
     MatExpansionModule,
+    AppRoutingModule // CLI adds AppRoutingModule to the AppModule's imports array
 
   ],
   providers: [],
